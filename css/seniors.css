@@ -1,0 +1,53 @@
+#seniors .portfolio-left li
+ {
+  width: 100%
+}
+
+#seniors .portfolio-left li:nth-child(2),
+#seniors .portfolio-left li:nth-child(3),
+#seniors .portfolio-left li:nth-child(5),
+#seniors .portfolio-left li:nth-child(6),
+#seniors .portfolio-left li:nth-child(8),
+#seniors .portfolio-left li:nth-child(9),
+#seniors .portfolio-left li:nth-child(10),
+#seniors .portfolio-left li:nth-child(11),
+#seniors .portfolio-left li:nth-child(12),
+#seniors .portfolio-left li:nth-child(13),
+#seniors .portfolio-left li:nth-child(15),
+#seniors .portfolio-left li:nth-child(16),
+#seniors .portfolio-left li:nth-child(17),
+#seniors .portfolio-left li:nth-child(18),
+#seniors .portfolio-left li:nth-child(20),
+#seniors .portfolio-left li:nth-child(21),
+#seniors .portfolio-left li:nth-child(22),
+#seniors .portfolio-left li:nth-child(23),
+#seniors .portfolio-left li:nth-child(25),
+#seniors .portfolio-left li:nth-child(26),
+#seniors .portfolio-left li:nth-child(28),
+#seniors .portfolio-left li:nth-child(29),
+#seniors .portfolio-left li:nth-child(31),
+#seniors .portfolio-left li:nth-child(32),
+#seniors .portfolio-left li:nth-child(35),
+#seniors .portfolio-left li:nth-child(36),
+#seniors .portfolio-left li:nth-child(37),
+#seniors .portfolio-left li:nth-child(38),
+#seniors .portfolio-left li:nth-child(39),
+#seniors .portfolio-left li:nth-child(40)
+
+ {
+  width: 49.5%
+}
+
+#seniors .portfolio-right li {
+	width: 100%;
+}
+
+#seniors .portfolio-left {
+	z-index: 9999999;
+}
+
+
+
+#seniors .portfolio-left {
+	position: relative;
+}
