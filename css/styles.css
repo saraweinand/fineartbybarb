@@ -651,7 +651,7 @@ hr.style1{
            **   *******     **********  ***     ***  *********   **********    ********
 ------------------------------------------------------------------------------------ */
 
-@media screen and (max-width: 850px) and (orientation : portrait) { 
+@media screen and (max-width: 768px) { 
 
 	.section-left {
 	width: 100%;
