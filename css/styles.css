@@ -4,8 +4,6 @@
 }
 
 body {
-
-	max-width: 1400px;
 	margin: 0 auto;
 	color: white;
 	width: 100%;
@@ -31,10 +29,9 @@ body {
 
 .section-left {
 	width: 20%;
-	/*max-width: 300px;*/
 	height: 100%;
 	display: inline-block;
-	float: right;
+	float: left;
 	margin: 0 0 2em 0;
 	position: fixed;
 
@@ -403,14 +400,14 @@ hr.style1{
 }
 
 .form input::-webkit-input-placeholder {
-   color: #ddd;
+   color: #919191;
    font-style: italic;
    text-indent: .5em;
 
 }
 
 .form textarea::-webkit-input-placeholder {
-   color: #ddd;
+   color: #919191;
    font-style: italic;
    text-indent: .5em;
    padding: .5em 0 0 0;
@@ -486,7 +483,7 @@ hr.style1{
 }
 
 .proofsform input::-webkit-input-placeholder {
-   color: #ddd;
+   color: #919191;
    font-style: italic;
    text-indent: .5em;
    font-size: .9em;
@@ -623,14 +620,16 @@ hr.style1{
     margin: 0 auto;
     text-align: center;
     color: white;
-    text-transform: uppercase;
+
 }
 
 .img-title h4 {
 	font-weight: 500;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	text-shadow: 1px 1px 1px #000;
-	font-family: 'Papyrus';
+	font-family: "Lato";
+	font-weight: 300;
+	text-transform: uppercase;
 	padding-top: 1em;
 }
 
