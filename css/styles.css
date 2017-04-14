@@ -100,7 +100,6 @@ body {
 .section-left .socialmedia {
 	position: fixed;
 	bottom: 0;
-	border-top: 1px solid #fff;
 	width: 19%;
 	margin-left: -2em;
 	padding-left: 1em;
@@ -109,6 +108,12 @@ body {
 .section-left .socialmedia li {
 	display: inline-block;
 	margin: 1em;
+	border: none;
+}
+
+.section-left .socialmedia li:last-of-type {
+padding-bottom: 0;
+
 }
 
 .socialmedia img {
@@ -118,6 +123,8 @@ body {
 .socialmedia li:first-of-type {
 	margin-right: -.5em;
 }
+
+
 
 
 
@@ -174,11 +181,12 @@ nav li a:active {
 }
 
 
-.socialmedia a img {
-	height: 1.5em;
-	display: inline-block;
-	float: left;
+.socialmedia li a img {
+    height: 1.75em;
+    display: inline-block;
+    float: left;
 }
+
 
 
 
@@ -414,12 +422,14 @@ hr.style1{
 
 }
 
-#name, #email, #phone, #session {
+#name, #email, #phone, #contact, #session {
 	width: 48%;
 	display: inline-block;
 	margin: 1em .5% 0 .5%;
 	height: 2em;
 }
+
+
 
 #message {
 	width: 98%;
@@ -427,7 +437,7 @@ hr.style1{
 	margin: 1em .5% 0 .5%;
 }
 
-#submitbutton {
+#submit {
 	width: 20%;
 	float: right;
 	height: 2em;
@@ -437,7 +447,7 @@ hr.style1{
 	color: white;
 }
 
-#submitbutton:hover {
+#submit:hover {
 	background: #ddd;
 	color: black;
 }
@@ -540,6 +550,7 @@ hr.style1{
 
 
 
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
      *************       ************     *************     ***************   ************     ************     ***           *************       ************
      **************     **************    **************    ***************   ************    **************    ***           *************      ************** 
@@ -555,57 +566,61 @@ hr.style1{
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
+.portfolio-gallery {
+  width: 100%;
+  float: left;
+}
+
+.portfolio-gallery ul  {
+	list-style: none;
+}
+
+.portfolio-gallery ul li {
+	display: inline-block;
+	width: 100%;
+}
+
+.portfolio-gallery ul li:nth-child(2),
+.portfolio-gallery ul li:nth-child(3) {
+	display: inline-block;
+	width: 49.5%;
+}
+
+.portfolio-gallery ul li img {
+	width: 100%;
+}
+
 .portfolio-left {
   width: 60%;
   float: left;
 }
 
-.portfolio-left ul li {
+.portfolio-left li {
 	display: inline-block;
 	width: 100%;
 }
 
-.portfolio-left li:nth-child(2),
-.portfolio-left li:nth-child(3) {
-  width: 49.5%;
-
-}
 
 .portfolio-left li img {
 	width: 100%;
-
 }
 
 .portfolio-right {
-  width: 40%;
+  width: 39%;
+  padding-left: .5%;
   float: left;
-  padding: 0;
 }
-
-.portfolio-right li{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.portfolio-right img {
-  width: 100%;
-  margin-left: .25em;
-
-}
-
-.portfolio-right li:nth-child(7) {
-	width: 100%;
-}
-
 
 .portfolio-right li {
+	display: inline-block;
 	width: 100%;
 }
 
-.portfolio-right li:nth-child(5) {
+
+.portfolio-right li img {
 	width: 100%;
 }
+
 
 
 .projects {
@@ -623,9 +638,19 @@ hr.style1{
 
 }
 
+.portfolio-gallery li img:hover {
+	-webkit-filter: brightness(0.8);
+    transition-timing-function: ease-in-out;
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+
+
+/* ---------------  */
+
 .img-title h4 {
 	font-weight: 500;
-	font-size: 1.25em;
+	font-size: 2em;
 	text-shadow: 1px 1px 1px #000;
 	font-family: "Lato";
 	font-weight: 300;
@@ -649,6 +674,50 @@ hr.style1{
    *********   *********    *********   ***    ***   *********   *********    **********
            **   *******     **********  ***     ***  *********   **********    ********
 ------------------------------------------------------------------------------------ */
+
+/* AVERAGE DESKTOP & TABLET SCREEN IMAGE SIZES */
+
+	div.medium{
+		display: block;
+	}
+
+	div.large {
+		display: none;
+	}	
+
+	div.small {
+		display: none;
+	}
+
+
+
+/* EXTRA LARGE TABLET SCREEN IMAGE SIZES */
+@media only screen and (min-width: 1401px){
+	div.medium{
+		display: none;
+	}
+
+	div.large {
+		display: block;
+	}
+	div.small {
+		display: none;
+	}
+}
+
+/* MOBILE PHONE SCREEN IMAGE SIZES */
+@media screen and (max-width: 480px){
+	div.medium{
+		display: none;
+	}
+
+	div.large {
+		display: none;
+	}
+	div.small {
+		display: block;
+	}
+}
 
 @media screen and (max-width: 768px) { 
 

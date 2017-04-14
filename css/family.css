@@ -7,11 +7,31 @@
   width: 100%
 }
 
+#families .portfolio-left li:nth-child(2),
+#families .portfolio-left li:nth-child(3),
 #families .portfolio-left li:nth-child(6),
-#families .portfolio-left li:nth-child(7) {
-	width: 49%;
+#families .portfolio-left li:nth-child(7),
+#families .portfolio-left li:nth-child(10),
+#families .portfolio-left li:nth-child(11),
+#families .portfolio-left li:nth-child(21),
+#families .portfolio-left li:nth-child(22) {
+	width: 49.75%;
 }
 
 #families .portfolio-left {
 	position: relative;
+}
+
+@media screen and (max-width: 1280px) {   
+#families .portfolio-left li:nth-child(2),
+#families .portfolio-left li:nth-child(3),
+#families .portfolio-left li:nth-child(6),
+#families .portfolio-left li:nth-child(7),
+#families .portfolio-left li:nth-child(10),
+#families .portfolio-left li:nth-child(11),
+#families .portfolio-left li:nth-child(21),
+#families .portfolio-left li:nth-child(22) {
+	width: 49.5%;
+}
+
 }
